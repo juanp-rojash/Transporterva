@@ -13,10 +13,12 @@ Para finalizar cabe resaltar que la aplicación tendrá una sección de pregunta
 ## Autores
 
 Juan Pablo Rojas Higuita
+
 Juan Pablo Villegas Marin
 
 ## Wireframes APP
 
 ( [click aqui](https://www.figma.com/file/ng9tTCBXlqVFR7yatKsLxF/Wireframes-APP?node-id=0%3A1) ) se encuentran los wireframes de la APP
  Prototipo inicial 
+ 
 ( [click aqui](https://www.figma.com/proto/ng9tTCBXlqVFR7yatKsLxF/Wireframes-APP?node-id=11%3A303&scaling=scale-down&page-id=0%3A1&starting-point-node-id=11%3A303) ) se encuentra el prototipo inicial de la APP
