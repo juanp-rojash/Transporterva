@@ -1,0 +1,29 @@
+{
+  "name": "Transporterva",
+  "version": "1.0.0",
+  "description": "El proyecto de curso denominado “Transporterva” consiste en una red de buses privados que brindarán transporte a la ciudadanía de Medellín en los múltiples municipios que lo conforman, todo por medio de reservas que los usuarios podrán realizar a través de una aplicación. Logrando identificar el tema en común como el transporte.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanp-rojash/Transporterva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanp-rojash/Transporterva/issues"
+  },
+  "homepage": "https://github.com/juanp-rojash/Transporterva#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0"
+  }
+}
