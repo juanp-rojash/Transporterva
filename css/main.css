@@ -10,8 +10,81 @@
   background: #6D4C41;
 }
 
+.Espacio {
+  height: 20%;
+}
+
+.Espacio_Boton {
+  height: 10%;
+}
+
+.B_reserva, .B_redbuses, .B_recarga, .B_informacion {
+  text-align: center;
+  font-size: medium;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height: 85%;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #6D4C41;
+  border: 2px solid white;
+  font-family: Arial;
+}
+
+.B_reserva:hover {
+  background-color: #5D6D7E;
+  color: white;
+}
+
+.B_redbuses:hover {
+  background-color: #F8C471;
+  color: white;
+}
+
+.B_recarga:hover {
+  background-color: #AF7AC5;
+  color: white;
+}
+
+.B_informacion:hover {
+  background-color: #52BE80;
+  color: white;
+}
+
 #S_reservaP1 {
   background: #5D6D7E;
+}
+
+.Espacio_Nombre {
+  height: 5%;
+}
+
+.B_nombrebus {
+  height: 85%;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  font-size: small;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #5D6D7E;
+  border: 2px solid white;
+  font-family: Arial;
+}
+
+.B_nombrebus:hover {
+  background-color: white;
+}
+
+.Espacio_Bus {
+  height: 15%;
+  border: 2px solid white;
+}
+
+.Espacio_Bus img {
+  height: 90%;
+  width: 30%;
+  margin-left: 35%;
 }
 
 #S_reservaP2 {
@@ -62,7 +135,7 @@
 #BarraH .C_nombre p {
   font-size: small;
   text-align: right;
-  font-family: Verdana;
+  font-family: Arial;
 }
 
 #BarraH .C_saldo p {

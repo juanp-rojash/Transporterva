@@ -3,3 +3,44 @@ $color:#6D4C41;
 #S_menu{
     background: $color;
 }
+
+.Espacio{
+    height: 20%;
+}
+
+.Espacio_Boton{
+    height: 10%;
+}
+
+.B_reserva, .B_redbuses, .B_recarga, .B_informacion{
+    text-align: center;
+    font-size: medium;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 85%;
+    width: 90%;
+    margin-left: 5%;
+    background-color: $color;
+    border: 2px solid white;
+    font-family: Arial;
+}
+
+.B_reserva:hover{
+    background-color: #5D6D7E;
+    color: white;
+}
+
+.B_redbuses:hover{
+    background-color: #F8C471;
+    color: white;
+}
+
+.B_recarga:hover{
+    background-color: #AF7AC5;
+    color: white;
+}
+
+.B_informacion:hover{
+    background-color: #52BE80;
+    color: white;
+}
