@@ -15,3 +15,37 @@
     height: 595px;
     border: 1px solid black;
 }
+
+#BarraH{
+    border: 2px solid black;
+    height: 9%;
+}
+
+#BarraH .C_img, #BarraH .C_nombre, #BarraH .C_saldo, #BarraH .C_notificacion{
+    float: left;
+    width: 23.5%;
+    height: 100%;
+}
+
+#BarraH .C_nombre p{
+    font-size: small;
+    text-align: right;
+    font-family: Verdana;
+}
+
+#BarraH .C_saldo p{
+    font-size: small;
+    text-align: right;
+    font-family: Verdana;
+}
+
+#BarraH .C_img img{
+    height: 100%;
+    width: 80%;
+}
+
+#BarraH .C_notificacion img{
+    width: 55%;
+    margin: 10%;
+    margin-left: 50%;
+}
