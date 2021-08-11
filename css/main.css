@@ -1,111 +1,51 @@
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_incio {
   background: #CD6155;
-}
-
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
 }
 
 #S_registro {
   background: #730000;
 }
 
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_menu {
   background: #6D4C41;
-}
-
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
 }
 
 #S_reservaP1 {
   background: #5D6D7E;
 }
 
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_reservaP2 {
   background: #CACFD2;
-}
-
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
 }
 
 #S_redbus {
   background: #F8C471;
 }
 
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_recarga {
   background: #AF7AC5;
-}
-
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
 }
 
 #S_info {
   background: #52BE80;
 }
 
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_recargaFactura {
   background: #5499C7;
-}
-
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
 }
 
 #S_reservaFactura {
   background: #48C9B0;
 }
 
-.vista {
-  width: 595px;
-  height: 595px;
-  border: 1px solid black;
-}
-
 #S_notificacion {
   background: #006666;
+}
+
+.vista {
+  width: 283px;
+  height: 595px;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=main.css.map */
