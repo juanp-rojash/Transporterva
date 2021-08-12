@@ -2,4 +2,59 @@ $color:#CACFD2;
 
 #S_reservaP2{
     background: $color;
+    overflow-y: scroll;
 }
+
+.Espacio_MapaSilla{
+    height: 30%;
+    width: 90%;
+    margin-left: 4.5%;
+    border: 2px solid white;
+}
+
+.Espacio_MapaSilla img{
+    display:block;
+    margin:auto;
+    margin-top: 5%;
+}
+
+.Espacio_Seccion{
+    width: 90%;
+    height: 8%;
+    margin-left: 4%;
+}
+
+.Espacio_Seccion #Desplegable_Hora{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.Espacio_Horario b{
+    font-family: Arial;
+    font-size: small;
+}
+
+.Espacio_MapaSilla #Sesion1, .Espacio_MapaSilla #Sesion2, .Espacio_MapaSilla #Sesion3{
+    height: 100%;
+    width: 31%;
+    float: left;
+    margin-left: 2%;
+}
+
+.Espacio_SillasSelec{
+    width: 90%;
+    height: 8%;
+}
+
+.Espacio_Seccion input{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    height: 40%;
+}
+
+.Espacio_Seccion #Boton_Comprar{
+    width: 50%;
+    margin-left: 30%;
+}
+
