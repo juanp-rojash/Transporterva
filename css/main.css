@@ -310,6 +310,21 @@ fe {
   background: #52BE80;
 }
 
+.Espacio_infor {
+  width: 90%;
+  height: 8%;
+  margin-left: 4%;
+}
+
+.Espacio_caja_pre {
+  height: 17%;
+  border: 2px solid black;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: x-small;
+  word-wrap: break-word;
+}
+
 #S_recargaFactura {
   background: #5499C7;
 }
@@ -349,7 +364,7 @@ fe {
 .Espacio_Noti {
   width: 150px;
   height: 20px;
-  border: 3px solid black;
+  border: 1.5px solid black;
   margin-left: 5%;
 }
 
