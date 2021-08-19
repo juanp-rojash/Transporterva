@@ -1,25 +1,25 @@
 $color:#CD6155;
 
 #S_incio{
-    background: $color;
+  background: $color;
 }
 
 .Espacio_Margen{
-    height: 12%;
+  height: 12%;
 }
 
 .Circulo_logo{
-     width: 100px;
-     height: 100px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     border: 1px solid black;
-     background: #D2301E;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: #D2301E;
 }
 
 .Espacio_medio{
-    height: 8%;
+  height: 8%;
 }
 
 input[type=text], select {
@@ -58,6 +58,6 @@ input[type=submit]:hover {
 }
 
 re{
-    color: black;
-    text-decoration-line: underline;
+  color: black;
+  text-decoration-line: underline;
 }

@@ -72,28 +72,8 @@ re {
   height: 5%;
 }
 
-.Circulo_logo {
-  width: 100px;
-  height: 100px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background: #D2301E;
-}
-
 .Espacio_medio_registro {
   height: 30%;
-}
-
-input[type=text], select {
-  width: 85%;
-  padding: 10px 20px;
-  margin: 4px 0;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 input[type=date], select {
@@ -106,31 +86,6 @@ input[type=date], select {
   box-sizing: border-box;
 }
 
-input[type=password], select {
-  width: 85%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 60%;
-  background-color: #5DD64A;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #32D419;
-}
-
 fe {
   color: white;
 }
@@ -139,44 +94,25 @@ fe {
   background: #6D4C41;
 }
 
-.Espacio {
-  height: 20%;
-}
-
-.Espacio_Boton {
-  height: 10%;
-}
-
-.B_reserva, .B_redbuses, .B_recarga, .B_informacion {
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border-radius: 8px;
+  color: white;
+  padding: 16px 32px;
   text-align: center;
-  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  height: 85%;
-  width: 90%;
-  margin-left: 5%;
-  background-color: #6D4C41;
-  border: 2px solid white;
-  font-family: Arial;
 }
 
-.B_reserva:hover {
-  background-color: #5D6D7E;
-  color: white;
-}
-
-.B_redbuses:hover {
-  background-color: #F8C471;
-  color: white;
-}
-
-.B_recarga:hover {
-  background-color: #AF7AC5;
-  color: white;
-}
-
-.B_informacion:hover {
-  background-color: #52BE80;
+.button:hover {
+  background-color: black;
   color: white;
 }
 
@@ -234,44 +170,11 @@ fe {
   margin-top: 5%;
 }
 
-.Espacio_Seccion {
-  width: 90%;
-  height: 8%;
-  margin-left: 4%;
-}
-
-.Espacio_Seccion #Desplegable_Hora {
-  width: 80%;
-  margin-left: 10%;
-}
-
-.Espacio_Horario b {
-  font-family: Arial;
-  font-size: small;
-}
-
-.Espacio_MapaSilla #Sesion1, .Espacio_MapaSilla #Sesion2, .Espacio_MapaSilla #Sesion3 {
+.Espacio_MapaSilla #Sesion {
   height: 100%;
   width: 31%;
   float: left;
   margin-left: 2%;
-}
-
-.Espacio_SillasSelec {
-  width: 90%;
-  height: 8%;
-}
-
-.Espacio_Seccion input {
-  width: 80%;
-  margin-left: 10%;
-  text-align: center;
-  height: 40%;
-}
-
-.Espacio_Seccion #Boton_Comprar {
-  width: 50%;
-  margin-left: 30%;
 }
 
 #S_redbus {
@@ -333,18 +236,6 @@ fe {
   background: #48C9B0;
 }
 
-#Espacio_SDivisio1, #Espacio_SDivisio2 {
-  height: 100%;
-  width: 45%;
-  float: left;
-  margin-left: 2.5%;
-}
-
-#Espacio_SDivisio1 input, #Espacio_SDivisio2 input {
-  width: 80%;
-  margin-left: 8%;
-}
-
 #S_notificacion {
   background: #006666;
 }
@@ -388,6 +279,19 @@ fe {
   background: #D72B1D;
   margin-left: 70%;
   border: 1px solid black;
+}
+
+.Espacio_Seccion {
+  width: 90%;
+  height: 8%;
+  margin-left: 4%;
+}
+
+#Espacio_SDivisio1, #Espacio_SDivisio2 {
+  height: 100%;
+  width: 45%;
+  float: left;
+  margin-left: 2.5%;
 }
 
 .vista {
