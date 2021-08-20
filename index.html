@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initical-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+    
     <title>Secciones Trasnporterva</title>
 </head>
 <body>
-    <section class="vista" id="S_incio">
-        <div class = "Espacio_Margen"></div>
+    <section id="S_inicio" class="">
+        <div class = "Espacio_Margen">
+        </div>
         <center>
             <div class = "Circulo_logo">
                 <div class = "C_img">
@@ -20,47 +21,47 @@
         <div class = "Espacio_medio"></div>
         <div>
           <center>
-          <form action="/action_page.php">
-            <label for="celectronico">Correo Electrónico</label>
-            <input type="text" id="celectronico" name="correoelectronico" placeholder="example@gmail.com">
-            <label for="csena">Contraseña</label>
-            <input type="password" id="csena" name="contrasena" placeholder="********">
-            <input type="submit" value="Iniciar">
-          </form>
+                <label for="celectronico">Correo Electrónico</label>
+                <input type="text" id="celectronico" name="correoelectronico" placeholder="example@gmail.com">
+                <label for="csena">Contraseña</label>
+                <input type="password" id="csena" name="contrasena" placeholder="********">
+                <input type="submit" value="Iniciar" onclick="irA(2)">
           </center>
         </div>
         <div class = "Espacio_medio"></div>
         <div>
             <center>
-                <re onclick = "">Registrarme</re>
+                <a onclick="irA(1)">Registrarme</a>
             </center>
         </div>
     </section>
-    <section class="vista" id="S_registro">
-    <div class = "Espacio_Margen"></div>
+    <section id="S_registro" class="ocultar">
+        <div class = "Espacio_Margen">
+        </div>
         <center>
             <div class = "Circulo_logo">
                 <div class = "C_img">
-                    <img src="./img/autobus.png">
+                     <img src="./img/autobus.png">
                 </div>
             </div>
         </center>
-        <div class= "Espacio_logo"></div>
+        <div class= "Espacio_logo">
+        </div>
         <div>
           <center>
-          <form action="/action_page.php">
-            <input type="text" id="nbre" name="nombre" placeholder="Nombre">
-            <div><fe for="fnac">Fecha de Nacimiento</fe></div>
-            <input type="date" id="fnac" name="fechanacimiento">
-            <input type="text" id="celectronico" name="correoelectronico" placeholder="Correo">
-            <input type="password" id="csena" name="contrasena" placeholder="Contraseña">
-            <input type="text" id="nrotel" name="numerotelefono" placeholder="Numero de Telefono">
-            <input type="submit" value="Registrarme">
-          </form>
+                <input type="text" id="nbre" name="nombre" placeholder="Nombre">
+                <div>
+                    <fe for="fnac">Fecha de Nacimiento</fe>
+                </div>
+                <input type="date" id="fnac" name="fechanacimiento">
+                <input type="text" id="celectronico" name="correoelectronico" placeholder="Correo">
+                <input type="password" id="csena" name="contrasena" placeholder="Contraseña">
+                <input type="text" id="nrotel" name="numerotelefono" placeholder="Numero de Telefono">
+                <input type="submit" value="Registrarme" onclick="irA(0)">
           </center>
         </div>    
     </section>
-    <section class="vista" id="S_menu">
+    <section id="S_menu" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
@@ -74,24 +75,24 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br><br>
         <div>
             <center>
-                <button class="button">Reserva</button>
-                <button class="button">Red de Buses</button>
-                <button class="button">Recargar</button>
-                <button class="button">Información</button>
+                <button class="button" onclick="irA(3)">Reserva</button>
+                <button class="button" onclick="irA(6)">Red de Buses</button>
+                <button class="button" onclick="irA(7)">Recargar</button>
+                <button class="button" onclick="irA(8)">Información</button>
             </center>
         </div>
     </section>
-    <section class="vista" id="S_reservaP1">
+    <section id="S_reservaP1" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -101,36 +102,36 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
         <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #1 </b></button>
+            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #1 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo1.png">
+            <img src="./img/autobusNo1.png" onclick="irA(4)">
         </div>
         <br>
         <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #2 </b></button>
+            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #2 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo2.png">
+            <img src="./img/autobusNo2.png" onclick="irA(4)">
         </div>
         <br>
         <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #3 </b></button>
+            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #3 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo3.png">
+            <img src="./img/autobusNo3.png" onclick="irA(4)">
         </div>
     </section>
-    <section class="vista" id="S_redbus">
+    <section id="S_redbus" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -140,15 +141,43 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
         <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #1 </b></button>
+            <button class="B_nombrebus" onclick="irA(3)"><b> Bus #1 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo1.png">
+            <img src="./img/autobusNo1.png" onclick="irA(3)">
+        </div>
+        <br>
+        <div class="Espacio_Paradas">
+            <table class="default">              
+                <tr>
+                  <th>Parada #1</th>
+                  <td>Dirección #1</td>
+                </tr>
+                <tr>
+                  <th>Parada #2</th>
+                  <td>Dirección #2</td>
+                </tr>
+                <tr>
+                    <th>Parada #3</th>
+                    <td>Dirección #3</td>
+                </tr>
+                <tr>
+                    <th>Parada #4</th>
+                    <td>Dirección #4</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="Espacio_Nombre">
+            <button class="B_nombrebus" onclick="irA(3)"><b> Bus #2 </b></button>
+        </div>
+        <div class="Espacio_Bus">
+            <img src="./img/autobusNo2.png" onclick="irA(3)">
         </div>
         <br>
         <div class="Espacio_Paradas">
@@ -171,40 +200,12 @@
                 </tr>
               </table>
         </div>
-        <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #2 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/autobusNo2.png">
-        </div>
-        <br>
-        <div class="Espacio_Paradas">
-            <table class="default">              
-                <tr>
-                  <th>Parada #1</th>
-                  <td>Dirección #1</td>
-                </tr>
-                <tr>
-                  <th>Parada #2</th>
-                  <td>Dirección #2</td>
-                </tr>
-                <tr>
-                    <th>Parada #3</th>
-                    <td>Dirección #3</td>
-                </tr>
-                <tr>
-                    <th>Parada #4</th>
-                    <td>Dirección #4</td>
-                </tr>
-              </table>
-        </div>
     </section>
-    <section class="vista" id="S_recarga">
+    <section id="S_recarga" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -214,7 +215,7 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <div>
@@ -224,7 +225,7 @@
             </center>
             <br>
             <center>
-                <form action="/action_page.php">
+                <form>
                     <input type="text" value="NumeroTarjeta" readonly placeholder="Numero Tarjeta">
                     <input type="text" value="NombreTitular" readonly placeholder="Nombre Titular">
                     <input type="text" value="FechaV" readonly placeholder="FEcha Vencimiento">
@@ -232,16 +233,16 @@
                     <input type="text" value="Monto" readonly placeholder="Monto">
                     <br><br>
                     <br>
-                    <input type="submit" value="Recargar">
+                    <input type="submit" value="Recargar" onclick="irA(10)">
                 </form>
             </center>
         </div>
     </section>
-    <section class="vista" id="S_info">
+    <section id="S_info" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -251,7 +252,7 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
@@ -272,11 +273,11 @@
             </center>
         </div>
     </section>
-    <section class="vista" id="S_notificacion">
+    <section id="S_notificacion" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -297,7 +298,7 @@
         <div class="Espacio_Seccion">
             <div id="Espacio_SDivisio1">
                 <br>
-                <div class="Espacio_Noti"><center>Reserva ID</center></div>
+                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
             </div>
             <div id="Espacio_SDivisio2">
                 <br>
@@ -308,7 +309,7 @@
         <div class="Espacio_Seccion">
             <div id="Espacio_SDivisio1">
                 <br>
-                <div class="Espacio_Noti"><center>Reserva ID</center></div>
+                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
             </div>
             <div id="Espacio_SDivisio2">
                 <br>
@@ -319,7 +320,7 @@
         <div class="Espacio_Seccion">
             <div id="Espacio_SDivisio1">
                 <br>
-                <div class="Espacio_Noti"><center>Reserva ID</center></div>
+                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
             </div>
             <div id="Espacio_SDivisio2">
                 <br>
@@ -330,7 +331,7 @@
         <div class="Espacio_Seccion">
             <div id="Espacio_SDivisio1">
                 <br>
-                <div class="Espacio_Noti"><center>Reserva ID</center></div>
+                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
             </div>
             <div id="Espacio_SDivisio2">
                 <br>
@@ -338,11 +339,11 @@
             </div>
         </div>
     </section>
-    <section class="vista" id="S_reservaP2">
+    <section id="S_reservaP2" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -352,7 +353,7 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
@@ -417,15 +418,15 @@
                 <b>Costo<b>
                 <input type="text" readonly>
                 <br>
-                <input type="submit" id="Boton_Comprar" value="Comprar">
+                <input type="submit" id="Boton_Comprar" value="Comprar" onclick="irA(5)">
             </center>
         </div>
     </section>
-    <section class="vista" id="S_reservaFactura">
+    <section id="S_reservaFactura" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -435,7 +436,7 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
@@ -452,15 +453,15 @@
                 <input type="date">
                 <input type="text" value="Codigo" readonly placeholder="Codigo">
                 <br><br>
-                <input type="submit" value="Inicio">
+                <input type="submit" value="Inicio" onclick="irA(2)">
             </center>
         </div>
     </section>
-    <section class="vista" id="S_recargaFactura">
+    <section id="S_recargaFactura" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
                 <center>
-                    <img src="./img/autobus.png">
+                    <img src="./img/autobus.png" onclick="irA(2)">
                 </center>
             </div>
             <div class="C_nombre">
@@ -470,7 +471,7 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
@@ -485,9 +486,10 @@
                 <br>
                 <input type="text" value="Monto" readonly placeholder="Monto">
                 <br><br>
-                <input type="submit" value="Inicio">
+                <input type="submit" value="Inicio" onclick="irA(2)">
             </center>
         </div>
     </section>
 </body>
+<script src="./js/main.js"></script>
 </html>

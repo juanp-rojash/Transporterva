@@ -10,10 +10,11 @@
 @use "facturareserva";
 @use "notificacion";
 
-.vista{
+section{
     width: 283px;
     height: 595px;
     border: 1px solid black;
+    margin: 0 auto;
 }
 
 #BarraH{
@@ -55,6 +56,6 @@ body{
     padding: 0;
 }
 
-section{
-    margin: 0 auto;
+.ocultar{
+    display: none;
 }

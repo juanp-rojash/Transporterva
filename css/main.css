@@ -1,4 +1,4 @@
-#S_incio {
+#S_inicio {
   background: #CD6155;
 }
 
@@ -55,11 +55,6 @@ input[type=submit]:hover {
   background-color: #32D419;
 }
 
-re {
-  color: black;
-  text-decoration-line: underline;
-}
-
 #S_registro {
   background: #730000;
 }
@@ -95,8 +90,9 @@ fe {
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #006666;
   /* Green */
+  border: 0;
   border-radius: 8px;
   color: white;
   padding: 16px 32px;
@@ -109,6 +105,7 @@ fe {
   /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
+  width: 90%;
 }
 
 .button:hover {
@@ -294,10 +291,11 @@ fe {
   margin-left: 2.5%;
 }
 
-.vista {
+section {
   width: 283px;
   height: 595px;
   border: 1px solid black;
+  margin: 0 auto;
 }
 
 #BarraH {
@@ -339,6 +337,6 @@ body {
   padding: 0;
 }
 
-section {
-  margin: 0 auto;
+.ocultar {
+  display: none;
 }

@@ -5,7 +5,8 @@ $color:#6D4C41;
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #006666; /* Green */
+    border: 0;
     border-radius: 8px;
     color: white;
     padding: 16px 32px;
@@ -17,6 +18,7 @@ $color:#6D4C41;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 90%;
 }
 
 .button:hover{
