@@ -10,6 +10,14 @@ Inicialmente el servicio de la aplicación hacia los usuarios les permitirá inf
 La aplicación aparte de gestionar el sistema anteriormente descrito, podrá administrarles a los usuarios un saldo que destinen a las reservas que desean realizar en cualquier momento del día. Para dicha tarea los usuarios gestionarán la información de su tarjeta bancaria personal y especificarán la cantidad de dinero que desean depositar. De esta forma agilizarían el proceso de pago de sus próximas reservas.
 Para finalizar cabe resaltar que la aplicación tendrá una sección de preguntas frecuentes donde gestionarían las dudas de los usuarios además de encontrar guías para usar la aplicación y su sistema de reserva.
 
+## **Parámetros**
+
+En el sprint backlog cuando vamos a definir la escala de prioridad esta siempre va a ser evaluada del 1 al 4, siendo 4 el valor al que se le va dar mayor prioridad y 1 siendo el mínimo valor.
+Igualmente en el sprint backlog, con respecto al esfuerzo se tiene definidad la escala de fibonacci como referencia, utilizadno los valores del 1 al 8 (1,2,3,5,8). El 1 como valor mínimo de esfuerzo y 8 como el máximo.
+En la parte del repositorio, a la hora de nombrar los commits, deben cumplir con cierto nombramiento, donde se pondra para las tareas [Tk - id] + descripción del cambio. 
+Ej: [Tk-01] Configuración de GULP.
+Finalmente para el código ira siempre correctamente tabulado y no deben presentarse espacios adicionales o innecesarios
+
 ## Autores
 
 Juan Pablo Rojas Higuita
