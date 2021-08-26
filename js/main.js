@@ -65,6 +65,9 @@ function compra(){
 
     sillas = [];
     costo = 0;
+
+    document.getElementById("SSeleccionadas").value = "";
+    document.getElementById("SCosto").value = "";
 }
 
 function iniciarVariables(){
