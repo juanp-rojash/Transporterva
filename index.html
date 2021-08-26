@@ -110,21 +110,21 @@
             <button class="B_nombrebus" onclick="irA(4)"><b> Bus #1 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo1.png" onclick="irA(4)">
+            <img src="./img/Bus.png" onclick="irA(4)">
         </div>
         <br>
         <div class="Espacio_Nombre">
             <button class="B_nombrebus" onclick="irA(4)"><b> Bus #2 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo2.png" onclick="irA(4)">
+            <img src="./img/Bus.png" onclick="irA(4)">
         </div>
         <br>
         <div class="Espacio_Nombre">
             <button class="B_nombrebus" onclick="irA(4)"><b> Bus #3 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo3.png" onclick="irA(4)">
+            <img src="./img/Bus.png" onclick="irA(4)">
         </div>
     </section>
     <section id="S_redbus" class="ocultar">
@@ -149,7 +149,7 @@
             <button class="B_nombrebus" onclick="irA(3)"><b> Bus #1 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo1.png" onclick="irA(3)">
+            <img src="./img/Bus.png" onclick="irA(3)">
         </div>
         <br>
         <div class="Espacio_Paradas">
@@ -177,7 +177,7 @@
             <button class="B_nombrebus" onclick="irA(3)"><b> Bus #2 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo2.png" onclick="irA(3)">
+            <img src="./img/Bus.png" onclick="irA(3)">
         </div>
         <br>
         <div class="Espacio_Paradas">
@@ -359,7 +359,7 @@
             <button class="B_nombrebus"><b> Bus #1 </b></button>
         </div>
         <div class="Espacio_Bus">
-            <img src="./img/autobusNo1.png">
+            <img src="./img/Bus.png">
         </div>
         <br>
         <div class="Espacio_MapaSilla">
@@ -370,53 +370,50 @@
             <center><b> Horario<b></center>
             <center>
                 <select>
-                    <option value="1">5:00 AM</option>
-                    <option value="2">6:00 AM</option>
-                    <option value="3">7:00 AM</option>
-                    <option value="4">8:00 AM</option>
+                    <option id="HorarioS" value="6:00AM">6:00 AM</option>
                 </select>
             </center>
         </div>
         <br>
         <div class="Espacio_MapaSilla">
             <div id="Sesion">
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png">
+                <input id="A1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="A2" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="B1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="B2" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="C1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="C2" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="D1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="D2" class="Libre"type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="E1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="E2" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
             </div>
             <div id="Sesion">
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
+                <input id="A3" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="A4" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
             </div>
             <div id="Sesion">
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png"><br>
-                <input type="image" src="./img/silla.png">
-                <input type="image" src="./img/silla.png">
+                <input id="A5" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="A6" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="B3" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="B4" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="C3" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="C4" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="D3" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="D4" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)"><br>
+                <input id="E3" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
+                <input id="E4" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
             </div>
         </div>
         <br>
         <div>
             <center>
                 <b>Silla(s) Seleccionada(s)</b>
-                <input type="text" readonly>
+                <input id="SSeleccionadas" type="text" readonly>
                 <b>Costo<b>
-                <input type="text" readonly>
+                <input id="SCosto" type="text" readonly>
                 <br>
-                <input type="submit" id="Boton_Comprar" value="Comprar" onclick="irA(5)">
+                <input type="submit" id="Boton_Comprar" value="Comprar" onclick="TransicionCompra()">
             </center>
         </div>
     </section>
@@ -441,15 +438,15 @@
         <div>
             <center>
                 <b> Factura Reserva</b>
-                <input type="text" value="ReservaID" readonly placeholder="Reserva ID">
-                <input type="text" value="BusNo" readonly placeholder="Bus ##">
-                <input type="text" value="Sillas" readonly placeholder="Sillas Reservadas">
-                <input type="text" value="Hora" readonly placeholder="Horario">
+                <input id="SId" type="text" value="ReservaID" readonly placeholder="Reserva ID">
+                <input id="SBus" type="text" value="BusNo" readonly placeholder="Bus ##">
+                <input id="SSillas" type="text" value="Sillas" readonly placeholder="Sillas Reservadas">
+                <input id="SHoraV" type="text" value="Hora" readonly placeholder="Horario">
                 <b> Fecha Reserva </b>
-                <input type="date">
+                <input id="SFechaR" type="date">
                 <b> Fecha de Viaje </b>
-                <input type="date">
-                <input type="text" value="Codigo" readonly placeholder="Codigo">
+                <input id="SFechaV" type="date">
+                <input id="SCodigo" type="text" value="Codigo" readonly placeholder="Codigo">
                 <br><br>
                 <input type="submit" value="Inicio" onclick="irA(2)">
             </center>
