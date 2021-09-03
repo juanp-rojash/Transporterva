@@ -4,69 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initical-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Secciones Trasnporterva</title>
 </head>
 <body>
     <section id="S_inicio" class="">
-        <div class = "Espacio_Margen">
-        </div>
-        <center>
-            <div class = "Circulo_logo">
-                <div class = "C_img">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
                     <img src="./img/autobus.png">
                 </div>
             </div>
-        </center>
-        <div class = "Espacio_medio"></div>
-        <div>
-          <center>
-                <label for="celectronico">Correo Electrónico</label>
-                <input type="text" id="celectronico" name="correoelectronico" placeholder="example@gmail.com">
-                <label for="csena">Contraseña</label>
-                <input type="password" id="csena" name="contrasena" placeholder="********">
-                <input type="submit" value="Iniciar" onclick="irA(2)">
-          </center>
-        </div>
-        <div class = "Espacio_medio"></div>
-        <div>
-            <center>
-                <a onclick="irA(1)">Registrarme</a>
-            </center>
+            <br><br>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Iniciar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mx-auto">
+                    <a onclick="irA(1)">Registrarme</a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="S_registro" class="ocultar">
-        <div class = "Espacio_Margen">
-        </div>
-        <center>
-            <div class = "Circulo_logo">
-                <div class = "C_img">
-                     <img src="./img/autobus.png">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    <img src="./img/autobus.png">
                 </div>
             </div>
-        </center>
-        <div class= "Espacio_logo">
-        </div>
-        <div>
-          <center>
-                <input type="text" id="nbre" name="nombre" placeholder="Nombre">
-                <div>
-                    <fe for="fnac">Fecha de Nacimiento</fe>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 </div>
-                <input type="date" id="fnac" name="fechanacimiento">
-                <input type="text" id="celectronico" name="correoelectronico" placeholder="Correo">
-                <input type="password" id="csena" name="contrasena" placeholder="Contraseña">
-                <input type="text" id="nrotel" name="numerotelefono" placeholder="Numero de Telefono">
-                <input type="submit" value="Registrarme" onclick="irA(0)">
-          </center>
-        </div>    
+            </div>
+            <p class="text-center">Fecha de Nacimiento</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Numero Celular" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(0)">Registrarme</button>
+                </div>
+            </div>
+        </div>   
     </section>
     <section id="S_menu" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -78,22 +94,34 @@
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
-        <br><br>
-        <div>
-            <center>
-                <button class="button" onclick="irA(3)">Reserva</button>
-                <button class="button" onclick="irA(6)">Red de Buses</button>
-                <button class="button" onclick="irA(7)">Recargar</button>
-                <button class="button" onclick="irA(8)">Información</button>
-            </center>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(3)">Reserva</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(6)">Red de Buses</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(7)">Recargar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(8)">Información</button>
+                </div>
+            </div>
         </div>
     </section>
     <section id="S_reservaP1" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -106,33 +134,28 @@
             </div>
         </div>
         <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #1 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png" onclick="irA(4)">
-        </div>
-        <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #2 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png" onclick="irA(4)">
-        </div>
-        <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus" onclick="irA(4)"><b> Bus #3 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png" onclick="irA(4)">
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #1</button>
+            </div>
+            <br>
+            <div class="Espacio_Bus">
+                <img src="./img/Bus.png" onclick="irA(4)">
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #2</button>
+            </div>
+            <br>
+            <div class="Espacio_Bus">
+                <img src="./img/Bus.png" onclick="irA(4)">
+            </div>
         </div>
     </section>
     <section id="S_redbus" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -145,68 +168,43 @@
             </div>
         </div>
         <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus" onclick="irA(3)"><b> Bus #1 </b></button>
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #1</button>
+            </div>
+            <br>
+            <div class="Espacio_Bus">
+                <img src="./img/Bus.png" onclick="irA(4)">
+            </div>
+            <br>
         </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png" onclick="irA(3)">
-        </div>
-        <br>
-        <div class="Espacio_Paradas">
-            <table class="default">              
+        <table class="table table-striped table-dark">
+            <thead>
                 <tr>
-                  <th>Parada #1</th>
-                  <td>Dirección #1</td>
+                  <th scope="col"># Parada</th>
+                  <th scope="col">Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>Parada #1</td>
+                    <td>Dirección #1</td>
                 </tr>
                 <tr>
-                  <th>Parada #2</th>
-                  <td>Dirección #2</td>
+                    <td>Parada #2</td>
+                    <td>Dirección #2</td>
                 </tr>
-                <tr>
-                    <th>Parada #3</th>
+                <tr class="table-primary">
+                    <td>Parada #3</td>
                     <td>Dirección #3</td>
                 </tr>
-                <tr>
-                    <th>Parada #4</th>
-                    <td>Dirección #4</td>
-                </tr>
-            </table>
-        </div>
-        <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus" onclick="irA(3)"><b> Bus #2 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png" onclick="irA(3)">
-        </div>
-        <br>
-        <div class="Espacio_Paradas">
-            <table class="default">              
-                <tr>
-                  <th>Parada #1</th>
-                  <td>Dirección #1</td>
-                </tr>
-                <tr>
-                  <th>Parada #2</th>
-                  <td>Dirección #2</td>
-                </tr>
-                <tr>
-                    <th>Parada #3</th>
-                    <td>Dirección #3</td>
-                </tr>
-                <tr>
-                    <th>Parada #4</th>
-                    <td>Dirección #4</td>
-                </tr>
-              </table>
-        </div>
+            </tbody>
+        </table>
     </section>
     <section id="S_recarga" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -218,30 +216,46 @@
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
-        <div>
+        <div class="container">
             <br>
-            <center>
-                <b> Recargar Saldo </b>
-            </center>
+            <p class="text-center">Recargar Saldo</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Numero Tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre Titular" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Fecha Vencimiento" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Numero de Seguridad" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Monto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
             <br>
-            <center>
-                    <input type="text" value="NumeroTarjeta" readonly placeholder="Numero Tarjeta">
-                    <input type="text" value="NombreTitular" readonly placeholder="Nombre Titular">
-                    <input type="text" value="FechaV" readonly placeholder="FEcha Vencimiento">
-                    <input type="text" value="NumeroSeguridad" readonly placeholder="Numero">
-                    <input type="text" value="Monto" readonly placeholder="Monto">
-                    <br><br>
-                    <br>
-                    <input type="submit" value="Recargar" onclick="irA(10)">
-            </center>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(10)">Recargar</button>
+                </div>
+            </div>
         </div>
     </section>
     <section id="S_info" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -254,29 +268,40 @@
             </div>
         </div>
         <br>
-        <div class="Espacio_infor">
-            <center><b>Preguntas Frecuentes</b></center>
-        </div>
-        <div class="Espacio_caja_pre">What is Lorem Ipsum? <br><br>Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat elementum, eros cras imperdiet facilisi libero pellentesque congue orci, rhoncus mus sollicitudin donec non diam sodales hac.</div>
-        <br><br>
-        <div class="Espacio_caja_pre">What is Lorem Ipsum? <br><br>Erat platea eu hac varius a imperdiet non netus, vulputate iaculis purus malesuada conubia viverra sodales, parturient blandit faucibus feugiat aenean vehicula eget. Porta ultricies natoque ut conubia felis neque netus lacus, laoreet fusce pharetra iaculis sodales dictumst ornare, placerat magnis lobortis nisi curabitur habitant parturient.</div>
-        <br>
-        <div class="Espacio_infor">
-            <center><b>Guía</b></center>
-        </div>
-        <div class="Espacio_caja_pre">
-            <center>
-                <br><b>¿Cómo Reservar?</b><br>
-                <img src="./img/video.png">
-            </center>
+        <div class="container">
+            <br>
+            <p class="text-center">Preguntas Frecuentes</p>
+            <br>
+            <div class="row justify-content-md-center">
+                <span class="border border-primary">
+                    <div class="row justify-content-md-center">
+                        <p class="text-center">¿What is Lorem Ipsum?</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <p class="text-center">Guía</p>
+            </div>
+            <div class="row justify-content-md-center">
+                <p class="text-center">¿Cómo Reservar?</p>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="mx-auto">
+                    <img src="./img/video.png">
+                </div>
+            </div>
         </div>
     </section>
     <section id="S_notificacion" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -285,64 +310,43 @@
                 <p> $$$$$ </p>
             </div>
             <div class="C_notificacion">
-                <img src="./img/notificacion.png">
+                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
-        <br>
-        <div class="Espacio_reservas">
-            <center><b>Reservas</b></center>
-        </div>
-        <br><br>
-        <div class="Espacio_Seccion">
-            <div id="Espacio_SDivisio1">
-                <br>
-                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
+        <div class="container">
+            <br>
+            <p class="text-center">Reservas</p>
+            <br>
+            <div class="row justify-content-md-center">
+                <div class="col-8" onclick="irA(5)">
+                    <p class="text-center">Reserva ID</p>
+                </div>
+                <div class="col-4">
+                    <span class="dot"></span>
+                </div>
             </div>
-            <div id="Espacio_SDivisio2">
-                <br>
-                <div class="circulog"></div>
+            <div class="row justify-content-md-center">
+                <div class="col-8" onclick="irA(5)">
+                    <p class="text-center">Reserva ID</p>
+                </div>
+                <div class="col-4">
+                    <span class="dot"></span>
+                </div>
             </div>
-        </div>
-        <div  class="Espacio_entre_reservas"></div>
-        <div class="Espacio_Seccion">
-            <div id="Espacio_SDivisio1">
-                <br>
-                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
-            </div>
-            <div id="Espacio_SDivisio2">
-                <br>
-                <div class="circulog"></div>
-            </div>
-        </div>
-        <div  class="Espacio_entre_reservas"></div>
-        <div class="Espacio_Seccion">
-            <div id="Espacio_SDivisio1">
-                <br>
-                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
-            </div>
-            <div id="Espacio_SDivisio2">
-                <br>
-                <div class="circulor"></div>
-            </div>
-        </div>
-        <div  class="Espacio_entre_reservas"></div>
-        <div class="Espacio_Seccion">
-            <div id="Espacio_SDivisio1">
-                <br>
-                <div class="Espacio_Noti" onclick="irA(5)"><center>Reserva ID</center></div>
-            </div>
-            <div id="Espacio_SDivisio2">
-                <br>
-                <div class="circulor"></div>
+            <div class="row justify-content-md-center">
+                <div class="col-8" onclick="irA(5)">
+                    <p class="text-center">Reserva ID</p>
+                </div>
+                <div class="col-4">
+                    <span class="dot"></span>
+                </div>
             </div>
         </div>
     </section>
     <section id="S_reservaP2" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -355,24 +359,25 @@
             </div>
         </div>
         <br>
-        <div class="Espacio_Nombre">
-            <button class="B_nombrebus"><b> Bus #1 </b></button>
-        </div>
-        <div class="Espacio_Bus">
-            <img src="./img/Bus.png">
-        </div>
-        <br>
-        <div class="Espacio_MapaSilla">
-            <img src="./img/mapa.png">
-        </div>
-        <br>
-        <div>
-            <center><b> Horario<b></center>
-            <center>
-                <select>
-                    <option id="HorarioS" value="6:00AM">6:00 AM</option>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <button type="button" class="btn btn-primary btn-block">Bus #1</button>
+            </div>
+            <br>
+            <div class="Espacio_Bus">
+                <img src="./img/Bus.png">
+            </div>
+            <br>
+            <div class="Espacio_MapaSilla">
+                <img src="./img/mapa.png">
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <select class="form-select" aria-label="Default select example" id="HorarioS">
+                    <option selected>Horario</option>
+                    <option value="6:00AM">6:00 AM</option>
                 </select>
-            </center>
+            </div>
         </div>
         <br>
         <div class="Espacio_MapaSilla">
@@ -406,23 +411,25 @@
             </div>
         </div>
         <br>
-        <div>
-            <center>
-                <b>Silla(s) Seleccionada(s)</b>
-                <input id="SSeleccionadas" type="text" readonly>
-                <b>Costo<b>
-                <input id="SCosto" type="text" readonly>
-                <br>
-                <input type="submit" id="Boton_Comprar" value="Comprar" onclick="TransicionCompra()">
-            </center>
+        <div class="container">
+            <p class="text-center">Silla(s) Seleccionada(s)</p>
+            <div class="row justify-content-md-center">
+                <input id="SSeleccionadas" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+            </div>
+            <br>
+            <p class="text-center">Costo</p>
+            <div class="row justify-content-md-center">
+                <input id="SCosto" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+            </div>
+            <br>
+            <button id="Boton_Comprar" type="button" class="btn btn-primary btn-block" onclick="TransicionCompra()">Comprar</button>
+            <br><br>
         </div>
     </section>
     <section id="S_reservaFactura" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -435,29 +442,58 @@
             </div>
         </div>
         <br>
-        <div>
-            <center>
-                <b> Factura Reserva</b>
-                <input id="SId" type="text" value="ReservaID" readonly placeholder="Reserva ID">
-                <input id="SBus" type="text" value="BusNo" readonly placeholder="Bus ##">
-                <input id="SSillas" type="text" value="Sillas" readonly placeholder="Sillas Reservadas">
-                <input id="SHoraV" type="text" value="Hora" readonly placeholder="Horario">
-                <b> Fecha Reserva </b>
-                <input id="SFechaR" type="date">
-                <b> Fecha de Viaje </b>
-                <input id="SFechaV" type="date">
-                <input id="SCodigo" type="text" value="Codigo" readonly placeholder="Codigo">
-                <br><br>
-                <input type="submit" value="Inicio" onclick="irA(2)">
-            </center>
+        <div class="container">
+            <br>
+            <p class="text-center">Factura de la compra</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SId" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="ReservaID" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SBus" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="BusNo" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SSillas" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Sillas" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SHoraV" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Hora" readonly>
+                </div>
+            </div>
+            <p class="text-center">Fecha de la Reserva</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SFechaR" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                </div>
+            </div>
+            <p class="text-center">Fecha del Viaje</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SFechaV" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="SCodigo" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Codigo" readonly>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Inicio</button>
+                </div>
+            </div>
         </div>
     </section>
     <section id="S_recargaFactura" class="ocultar">
         <div id="BarraH">
             <div class="C_img">
-                <center>
-                    <img src="./img/autobus.png" onclick="irA(2)">
-                </center>
+                <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
                 <p> Usuario </p>
@@ -470,21 +506,42 @@
             </div>
         </div>
         <br>
-        <div>
-            <center><b> Factura Recarga</b>
-                <br>
-                <input type="text" value="FacturaID" readonly placeholder="Factura ID">
-                <br>
-                <input type="text" value="NombreTitular" readonly placeholder="Nombre Titular">
-                <br>
-                <input type="text" value="NumeroTarjeta" readonly placeholder="Numero Tarjeta">
-                <br>
-                <input type="text" value="Monto" readonly placeholder="Monto">
-                <br><br>
-                <input type="submit" value="Inicio" onclick="irA(2)">
-            </center>
+        <div class="container">
+            <br>
+            <p class="text-center">Factura de la compra</p>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="FacturaID" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NombreTitular" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NumeroTarjeta" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Monto" readonly>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Inicio</button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
 <script src="./js/main.js"></script>
+<<<<<<< HEAD
 </html>
+=======
+<script src="js/bootstrap.min.js"></script>
+</html>
+>>>>>>> Disenio
