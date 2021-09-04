@@ -2,24 +2,6 @@
   background: #CD6155;
 }
 
-.Espacio_Margen {
-  height: 12%;
-}
-
-.Circulo_logo {
-  width: 100px;
-  height: 100px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background: #D2301E;
-}
-
-.Espacio_medio {
-  height: 8%;
-}
-
 input[type=text], select {
   width: 85%;
   padding: 10px 20px;
@@ -59,18 +41,6 @@ input[type=submit]:hover {
   background: #730000;
 }
 
-.Espacio_Margen {
-  height: 12%;
-}
-
-.Espacio_logo {
-  height: 5%;
-}
-
-.Espacio_medio_registro {
-  height: 30%;
-}
-
 input[type=date], select {
   width: 85%;
   padding: 10px 20px;
@@ -81,65 +51,12 @@ input[type=date], select {
   box-sizing: border-box;
 }
 
-fe {
-  color: white;
-}
-
 #S_menu {
   background: #6D4C41;
 }
 
-.button {
-  background-color: #006666;
-  /* Green */
-  border: 0;
-  border-radius: 8px;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 90%;
-}
-
-.button:hover {
-  background-color: black;
-  color: white;
-}
-
 #S_reservaP1 {
   background: #5D6D7E;
-}
-
-.Espacio_Nombre {
-  height: 5%;
-}
-
-.B_nombrebus {
-  height: 85%;
-  width: 90%;
-  margin-left: 5%;
-  text-align: center;
-  font-size: small;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: #5D6D7E;
-  border: 2px solid white;
-  font-family: Arial;
-}
-
-.B_nombrebus:hover {
-  background-color: white;
-}
-
-.Espacio_Bus {
-  height: 15%;
 }
 
 .Espacio_Bus img {
@@ -178,29 +95,6 @@ fe {
   overflow-y: scroll;
 }
 
-.Espacio_Paradas {
-  height: 30%;
-  width: 90%;
-  margin-left: 4.5%;
-  border: 2px solid white;
-}
-
-.Espacio_Paradas table {
-  width: 100%;
-  height: 100%;
-}
-
-.Espacio_Paradas table th {
-  background-color: black;
-  color: white;
-}
-
-.Espacio_Paradas table td {
-  background-color: white;
-  color: black;
-  text-align: right;
-}
-
 #S_recarga {
   background: #AF7AC5;
 }
@@ -225,7 +119,7 @@ fe {
 }
 
 #S_recargaFactura {
-  background: #5499C7;
+  background: #33F9FF;
 }
 
 #S_reservaFactura {
@@ -345,3 +239,5 @@ body {
 .ocultar {
   display: none;
 }
+
+/*# sourceMappingURL=main.css.map */
