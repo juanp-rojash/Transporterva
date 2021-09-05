@@ -8,15 +8,18 @@
     <title>Secciones Trasnporterva</title>
 </head>
 <body>
+    <!-- Seccion de inicio en el programa -->
     <section id="S_inicio" class="">
         <br><br>
         <div class="container">
+            <!-- Logo de la aplicacion -->
             <div class="row">
                 <div class="mx-auto">
                     <img src="./img/autobus.png">
                 </div>
             </div>
             <br><br>
+            <!-- Campos input de correo y contraseña -->
             <div class="row">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -27,25 +30,31 @@
                     <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 </div>
             </div>
+            <!-- Boton para iniciar -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Iniciar</button>
                 </div>
             </div>
+            <!-- Etiqueta para registrarse -->
             <div class="row">
                 <div class="mx-auto">
                     <a onclick="irA(1)">Registrarme</a>
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de seccion de inicio -->    
     </section>
+    <!-- Seccion de registro en el programa -->
     <section id="S_registro" class="ocultar">
         <div class="container">
+            <!-- Logo de la aplicacion -->
             <div class="row">
                 <div class="mx-auto">
                     <img src="./img/autobus.png">
                 </div>
             </div>
+            <!-- Campos input de datos del cliente -->
             <div class="row">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -72,15 +81,20 @@
                     <input type="text" class="form-control" placeholder="Numero Celular" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 </div>
             </div>
+            <!-- Boton de registro -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(0)">Registrarme</button>
                 </div>
             </div>
-        </div>   
+        </div>
+    <!-- Finalizacion de seccion de registro -->       
     </section>
+    <!-- Seccion de menu principal de la aplicacion -->
     <section id="S_menu" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -90,36 +104,46 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
+        <!-- Botones correspondientes a cada funcionalidad disponible -->
         <div class="container">
+            <!-- Boton de reserva -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(3)">Reserva</button>
                 </div>
             </div>
+            <!-- Boton de red de buses -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(6)">Red de Buses</button>
                 </div>
             </div>
+            <!-- Boton de recargar saldo -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(7)">Recargar</button>
                 </div>
             </div>
+            <!-- Boton de informacion de la aplicacion -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(8)">Información</button>
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de seccion de inicio -->
     </section>
+    <!-- Seccion de reserva (pagina 1) de la aplicacion -->
     <section id="S_reservaP1" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -129,11 +153,13 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
+        <!-- Botones que dirigen a la informacion del bus correspondiente -->
         <div class="container">
             <div class="row">
                 <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #1</button>
@@ -151,9 +177,13 @@
                 <img src="./img/Bus.png" onclick="irA(4)">
             </div>
         </div>
+    <!-- Finalizacion de seccion de reserva de buses (pagina 1) -->    
     </section>
+    <!-- Seccion de red de buses de la aplicacion -->
     <section id="S_redbus" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -163,12 +193,14 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
         <div class="container">
+            <!-- Boton que dirige a toda la informacion del bus para la parte de la reserva -->
             <div class="row">
                 <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #1</button>
             </div>
@@ -178,6 +210,7 @@
             </div>
             <br>
         </div>
+        <!-- Tabla con el orden de parada y su direccion correspondiente -->
         <table class="table table-striped table-secondary">
             <thead>
                 <tr>
@@ -200,9 +233,13 @@
                 </tr>
             </tbody>
         </table>
+    <!-- Finalizacion de seccion de red de buses -->    
     </section>
+    <!-- Seccion de recargar saldo de la aplicacion -->
     <section id="S_recarga" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -212,10 +249,12 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
+        <!-- Campos input que llenael usuario para recrgar su saldo -->
         <div class="container">
             <br>
             <p class="text-center font-weight-bold">Recargar Saldo</p>
@@ -245,15 +284,18 @@
                 </div>
             </div>
             <br>
+            <!-- Boton para recargar su saldo -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(10)">Recargar</button>
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de seccion de recarga de saldo -->    
     </section>
     <section id="S_info" class="ocultar">
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -263,6 +305,7 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
@@ -300,6 +343,7 @@
     </section>
     <section id="S_notificacion" class="ocultar">
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -309,6 +353,7 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
@@ -345,6 +390,7 @@
     </section>
     <section id="S_reservaP2" class="ocultar">
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -354,6 +400,7 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
@@ -428,6 +475,7 @@
     </section>
     <section id="S_reservaFactura" class="ocultar">
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -437,6 +485,7 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
@@ -492,6 +541,7 @@
     </section>
     <section id="S_recargaFactura" class="ocultar">
         <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
@@ -501,6 +551,7 @@
             <div class="C_saldo">
                 <p> $$$$$ </p>
             </div>
+            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
