@@ -293,7 +293,9 @@
         </div>
     <!-- Finalizacion de seccion de recarga de saldo -->    
     </section>
+    <!-- Seccion de informacion de la aplicacion --> 
     <section id="S_info" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
             <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
@@ -311,6 +313,7 @@
             </div>
         </div>
         <br>
+        <!-- Contenedor con toda la informacion correspondiente de la aplicacion -->
         <div class="container">
             <br>
             <p class="text-center font-weight-bold ">Preguntas Frecuentes</p>
@@ -334,14 +337,18 @@
             <div class="row justify-content-md-center">
                 <p class="text-center">¿Cómo Reservar?</p>
             </div>
+            <!-- Se piensa insertar el video explicativo de como reservar -->
             <div class="row justify-content-md-center">
                 <div class="mx-auto">
                     <img src="./img/video.png">
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de la seccion de informacion -->
     </section>
+    <!-- Seccion de notificaion de viajes reservados de la aplicacion -->
     <section id="S_notificacion" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
             <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
@@ -358,8 +365,10 @@
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
+        <!-- Contenedor con cada reserva de viaje hecha por el usuario -->
         <div class="container">
             <br>
+            <!-- Cada reserva redirige a la factura de compra con toda la informacion necesaria -->
             <p class="text-center font-weight-bold">Reservas</p>
             <br>
             <div class="row justify-content-md-center">
@@ -387,8 +396,11 @@
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de la seccion de notificaciones -->    
     </section>
+    <!-- Seccion de reserva (pagina 2) de la aplicacion -->
     <section id="S_reservaP2" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
             <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
@@ -406,19 +418,23 @@
             </div>
         </div>
         <br>
+        <!-- Contenedor con la informacion principal del bus seleccionado -->
         <div class="container">
             <div class="row justify-content-md-center">
                 <button type="button" class="btn btn-primary btn-block">Bus #1</button>
             </div>
             <br>
+            <!-- Imagen del bus seleccionado -->
             <div class="Espacio_Bus">
                 <img src="./img/Bus.png">
             </div>
             <br>
+            <!-- Ruta del bus seleccionado -->
             <div class="Espacio_MapaSilla">
                 <img src="./img/mapa.png">
             </div>
             <br>
+            <!-- Desplegable del horario del bus (segun las establecidas) -->
             <div class="row justify-content-md-center">
                 <select class="form-select" aria-label="Default select example" id="HorarioS">
                     <option selected>Horario</option>
@@ -427,6 +443,7 @@
             </div>
         </div>
         <br>
+        <!-- Espacio de reserva de asientos del bus -->
         <div class="Espacio_MapaSilla">
             <div id="Sesion">
                 <input id="A1" class="Libre" type="image" src="./img/silla.png" onclick="seleccionSilla(this.id)">
@@ -459,21 +476,27 @@
         </div>
         <br>
         <div class="container">
+            <!-- Nombre de las sillas seleccionadas -->
             <p class="text-center font-weight-bold">Silla(s) Seleccionada(s)</p>
             <div class="row justify-content-md-center">
                 <input id="SSeleccionadas" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
             </div>
             <br>
+            <!-- Costo del viaje de acuerdo a la cantidad de sillas seleccionadas -->
             <p class="text-center font-weight-bold">Costo</p>
             <div class="row justify-content-md-center">
                 <input id="SCosto" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
             </div>
             <br>
+            <!-- Boton de compra que redirige a la factura, esto solo si hay al menos una silla seleccionada -->
             <button id="Boton_Comprar" type="button" class="btn btn-primary btn-block" onclick="TransicionCompra()">Comprar</button>
             <br><br>
         </div>
+    <!-- Finalizcion de seccion de reserva -->
     </section>
+    <!-- Seccion de factura despues de hacer la reserva de asientos -->
     <section id="S_reservaFactura" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
             <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
@@ -491,55 +514,67 @@
             </div>
         </div>
         <br>
+        <!-- Contenedor con toda la informacion de la factura -->
         <div class="container">
             <br>
             <p class="text-center font-weight-bold">Factura de la compra</p>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Id de la reserva -->
                     <input id="SId" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="ReservaID" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Numero del Bus -->
                     <input id="SBus" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="BusNo" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Sillas seleccionadas -->
                     <input id="SSillas" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Sillas" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Hora de salida del bus -->
                     <input id="SHoraV" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Hora" readonly>
                 </div>
             </div>
             <p class="text-center font-weight-bold">Fecha de la Reserva</p>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Fecha de la reserva -->
                     <input id="SFechaR" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
                 </div>
             </div>
             <p class="text-center font-weight-bold">Fecha del Viaje</p>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Fecha del viaje -->
                     <input id="SFechaV" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Codigo del viaje -->
                     <input id="SCodigo" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Codigo" readonly>
                 </div>
             </div>
             <br>
+            <!-- Boton que redirige al inicio de la aplicacion -->
             <div class="row">
                 <div class="input-group mb-3">
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Inicio</button>
                 </div>
             </div>
         </div>
+    <!-- Finalizacion de la seccion de factura de reserva -->
     </section>
+    <!-- Seccion de factura de recarga de saldo -->
     <section id="S_recargaFactura" class="ocultar">
+        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
         <div id="BarraH">
             <!-- El logo de esta barra, redirige al menu de la aplicacion -->
             <div class="C_img">
@@ -562,27 +597,32 @@
             <p class="text-center font-weight-bold">Factura de la compra</p>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Id de la factura de la recarga -->
                     <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="FacturaID" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Nombre del titular -->
                     <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NombreTitular" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Numero de la tarjeta -->
                     <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NumeroTarjeta" readonly>
                 </div>
             </div>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Monto añadido a la aplicacion -->
                     <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Monto" readonly>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="input-group mb-3">
+                    <!-- Boton que redirige al inicio de la aplicacion -->
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Inicio</button>
                 </div>
             </div>
