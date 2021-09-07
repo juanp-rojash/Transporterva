@@ -1,7 +1,10 @@
+@charset "UTF-8";
+/* Color de la seccion de inicio */
 #S_inicio {
   background: #CD6155;
 }
 
+/* Diseño del input tipo texto */
 input[type=text], select {
   width: 85%;
   padding: 10px 20px;
@@ -12,6 +15,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+/* Diseño del input tipo password */
 input[type=password], select {
   width: 85%;
   padding: 10px 20px;
@@ -22,29 +26,35 @@ input[type=password], select {
   box-sizing: border-box;
 }
 
+/* Color de la seccion de registro */
 #S_registro {
   background: #730000;
 }
 
+/* Color de la seccion del menu principal */
 #S_menu {
   background: #6D4C41;
 }
 
+/* Color de la seccion de la primera pagina de reserva */
 #S_reservaP1 {
   background: #5D6D7E;
 }
 
+/* Margen que contiene la imagen de bus */
 .Espacio_Bus img {
   height: 100%;
   width: 90%;
   margin-left: 5%;
 }
 
+/* Color de la seccion de la segunda pagina de la reserva ademas de la barra de scroll */
 #S_reservaP2 {
   background: #CACFD2;
   overflow-y: scroll;
 }
 
+/* Recuadro que contiene el margen de las sillas del bus */
 .Espacio_MapaSilla {
   height: 32%;
   width: 90%;
@@ -52,12 +62,14 @@ input[type=password], select {
   border: 2px solid white;
 }
 
+/* Recuadro que centra el mapa (imagen) */
 .Espacio_MapaSilla img {
   display: block;
   margin: auto;
   margin-top: 5%;
 }
 
+/* Hace que las sillas vayan organizadas de la manera adecuada en el recuadro establecido */
 .Espacio_MapaSilla #Sesion {
   height: 100%;
   width: 31%;
@@ -65,32 +77,39 @@ input[type=password], select {
   margin-left: 2%;
 }
 
+/* Color de la seccion de red de buses ademas de la barra de scroll */
 #S_redbus {
   background: #F8C471;
   overflow-y: scroll;
 }
 
+/* Color de la seccion de recarga de saldo */
 #S_recarga {
   background: #AF7AC5;
 }
 
+/* Color de la seccion de informacion */
 #S_info {
   background: #52BE80;
 }
 
+/* Color de la seccion de factura de recarga de saldo */
 #S_recargaFactura {
   background: #33F9FF;
 }
 
+/* Color de la seccion de factura de la reserva */
 #S_reservaFactura {
   background: #48C9B0;
   overflow-y: scroll;
 }
 
+/* Color de la seccion de notificacion */
 #S_notificacion {
   background: #006666;
 }
 
+/* Puntos de notificacion */
 .dot {
   height: 25px;
   width: 25px;

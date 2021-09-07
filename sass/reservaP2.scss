@@ -1,10 +1,12 @@
 $color:#CACFD2;
 
+/* Color de la seccion de la segunda pagina de la reserva ademas de la barra de scroll */
 #S_reservaP2{
     background: $color;
     overflow-y: scroll;
 }
 
+/* Recuadro que contiene el margen de las sillas del bus */
 .Espacio_MapaSilla{
     height: 32%;
     width: 90%;
@@ -12,12 +14,14 @@ $color:#CACFD2;
     border: 2px solid white;
 }
 
+/* Recuadro que centra el mapa (imagen) */
 .Espacio_MapaSilla img{
     display:block;
     margin:auto;
     margin-top: 5%;
 }
 
+/* Hace que las sillas vayan organizadas de la manera adecuada en el recuadro establecido */
 .Espacio_MapaSilla #Sesion{
     height: 100%;
     width: 31%;

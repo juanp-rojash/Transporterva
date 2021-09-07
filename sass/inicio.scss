@@ -1,9 +1,11 @@
 $color:#CD6155;
 
+/* Color de la seccion de inicio */
 #S_inicio{
   background: $color;
 }
 
+/* Diseño del input tipo texto */
 input[type=text], select {
   width: 85%;
   padding: 10px 20px;
@@ -14,6 +16,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+/* Diseño del input tipo password */
 input[type=password], select {
   width: 85%;
   padding: 10px 20px;
