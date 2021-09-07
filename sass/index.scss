@@ -10,6 +10,7 @@
 @use "facturareserva";
 @use "notificacion";
 
+/* Diseño de cada sección (Tamaño escala a celular)*/
 section{
     width: 283px;
     height: 595px;
@@ -17,18 +18,21 @@ section{
     margin: 0 auto;
 }
 
+/* Tamaño de la barra superior del menú */
 #BarraH{
     border: 2px solid black;
     height: 9%;
     background-color: blanchedalmond;
 }
 
+/* Distancia y tamaño de cada parte de la barra del menú */
 #BarraH .C_img, #BarraH .C_nombre, #BarraH .C_saldo, #BarraH .C_notificacion{
     float: left;
     width: 23.5%;
     height: 100%;
 }
 
+/* Diseño de la letra */
 #BarraH p{
     font-size: small;
     text-align: right;
@@ -36,23 +40,27 @@ section{
     margin-top: 20%;
 }
 
+/* Tamaño de la imagen */
 #BarraH .C_img img{
     height: 100%;
     margin-left: 20%;
     width: 80%;
 }
 
+/* Tamaño de la imagen */
 #BarraH .C_notificacion img{
     width: 55%;
     margin: 10%;
     margin-left: 50%;
 }
 
+/* Diseño del cuerpo del HTML */
 body{
     margin: 0;
     padding: 0;
 }
 
+/* Secion orientada a la funcionalidad en el JS */ 
 .ocultar{
     display: none;
 }
