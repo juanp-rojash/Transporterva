@@ -83,3 +83,36 @@ function iniciarVariables(){
     secciones.push(document.getElementById("S_notificacion"));
     secciones.push(document.getElementById("S_recargaFactura"));
 }
+
+function capturaDatosInicio(){
+    var Icorreo = document.getElementById("I_Correo").value;
+    var Ipassword = document.getElementById("I_Contra").value;
+
+    var localSCorreo = localStorage.getItem("correo");
+    var localSPassword = localStorage.getItem("password");
+
+    if(Icorreo === localSCorreo && Ipassword === localSPassword){
+        irA(2)
+    }
+    else{
+        window.alert("Datos no compatibles o no se ha registrado correctamente. Verifique la información");
+        document.getElementById("I_Correo").value = "";
+        document.getElementById("I_Contra").value = "";
+    }
+}
+
+function capturaDatosRegistro(){
+    var Rnombre = document.getElementById("R_Nombre").value;
+    var Rnacimiento = document.getElementById("R_FNacimiento").value;
+    var Rcorreo = document.getElementById("R_Correo").value;
+    var Rpassword = document.getElementById("R_Contra").value;
+    var Rcelular = document.getElementById("R_Celular").value;
+
+    localStorage.setItem("nombre", Rnombre);
+    localStorage.setItem("nacimiento", Rnacimiento);
+    localStorage.setItem("correo", Rcorreo);
+    localStorage.setItem("password",Rpassword);
+    localStorage.setItem("celular", Rcelular);
+
+    irA(0);
+}

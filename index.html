@@ -19,23 +19,25 @@
                 </div>
             </div>
             <br><br>
-            <!-- Campos input de correo y contraseña -->
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <form action="javascript:;" onsubmit="capturaDatosInicio()">
+                <!-- Campos input de correo y contraseña -->
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="I_Correo" type="text" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2" required minlength="6">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="I_Contra" type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    </div>
                 </div>
-            </div>
-            <!-- Boton para iniciar -->
-            <div class="row">
-                <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Iniciar</button>
+                <!-- Boton para iniciar -->
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar</button>
+                    </div>
                 </div>
-            </div>
+            </form>
             <!-- Etiqueta para registrarse -->
             <div class="row">
                 <div class="mx-auto">
@@ -54,39 +56,41 @@
                     <img src="./img/autobus.png">
                 </div>
             </div>
-            <!-- Campos input de datos del cliente -->
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <form action="javascript:;" onsubmit="capturaDatosRegistro()">
+                <!-- Campos input de datos del cliente -->
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="R_Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    </div>
                 </div>
-            </div>
-            <p class="text-center text-white">Fecha de Nacimiento</p>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <p class="text-center text-white">Fecha de Nacimiento</p>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="R_FNacimiento" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="R_Correo" type="email" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2" minlength="6">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="R_Contra" type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Numero Celular" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="R_Celular" type="text" class="form-control" placeholder="Numero Celular" aria-label="Recipient's username" aria-describedby="basic-addon2" minlength="10">
+                    </div>
                 </div>
-            </div>
-            <!-- Boton de registro -->
-            <div class="row">
-                <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(0)">Registrarme</button>
+                <!-- Boton de registro -->
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Registrarme</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     <!-- Finalizacion de seccion de registro -->       
     </section>
