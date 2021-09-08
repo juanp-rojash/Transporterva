@@ -3,4 +3,5 @@ $color:#33F9FF;
 /* Color de la seccion de factura de recarga de saldo */
 #S_recargaFactura{
     background: $color;
+    overflow-y: scroll;
 }

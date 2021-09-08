@@ -103,10 +103,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -152,10 +152,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -192,10 +192,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -248,52 +248,54 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
                 <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
-        <!-- Campos input que llenael usuario para recrgar su saldo -->
+        <!-- Campos input que llena el usuario para recrgar su saldo -->
         <div class="container">
             <br>
             <p class="text-center font-weight-bold">Recargar Saldo</p>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Numero Tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <form action="javascript:;" onsubmit="recarga()">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="Recarga_NoTarjeta" type="text" class="form-control" placeholder="Numero Tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2" required minlength="16">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre Titular" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="Recarga_Titular" type="text" class="form-control" placeholder="Nombre Titular" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Fecha Vencimiento" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="Recarga_FVencimiento" type="text" class="form-control" placeholder="Fecha Vencimiento" aria-label="Recipient's username" aria-describedby="basic-addon2" minlength="5">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Numero de Seguridad" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="Recarga_NoSeguridad" type="password" class="form-control" placeholder="Numero de Seguridad" aria-label="Recipient's username" aria-describedby="basic-addon2" minlength="3">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Monto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="Recarga_Monto" type="text" class="form-control" placeholder="Monto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <!-- Boton para recargar su saldo -->
-            <div class="row">
-                <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(10)">Recargar</button>
+                <br>
+                <!-- Boton para recargar su saldo -->
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Recargar</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     <!-- Finalizacion de seccion de recarga de saldo -->    
     </section>
@@ -306,10 +308,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -359,10 +361,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -411,10 +413,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -507,10 +509,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -591,10 +593,10 @@
                 <img src="./img/autobus.png" onclick="irA(2)">
             </div>
             <div class="C_nombre">
-                <p> Usuario </p>
+                <p class="NombreUsuario"> Usuario </p>
             </div>
             <div class="C_saldo">
-                <p> $$$$$ </p>
+                <p class="DineroUsuario"> 00000 </p>
             </div>
             <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
             <div class="C_notificacion">
@@ -605,28 +607,33 @@
         <div class="container">
             <br>
             <p class="text-center font-weight-bold">Factura de la compra</p>
+            <br>
+            <p class="text-center font-weight-bold">ID</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Id de la factura de la recarga -->
-                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="FacturaID" readonly>
+                    <input id="SIdRecarga" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="FacturaID" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Titular</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Nombre del titular -->
-                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NombreTitular" readonly>
+                    <input id="SNombreRecarga" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NombreTitular" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Tarjeta</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Numero de la tarjeta -->
-                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NumeroTarjeta" readonly>
+                    <input id="SNumTarjeta" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="NumeroTarjeta" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Monto</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Monto añadido a la aplicacion -->
-                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Monto" readonly>
+                    <input id="SMonto" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Monto" readonly>
                 </div>
             </div>
             <br>

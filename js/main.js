@@ -2,12 +2,13 @@ let secciones = [];
 let sillas = [];
 let costo = 0;
 let sillasCompradas = [];
+let monto = 0;
 
 window.onload = inicio();
 
 function inicio(){
     iniciarVariables();
-    irA(4);
+    irA(2);
 }
 
 function TransicionCompra(){
@@ -82,6 +83,9 @@ function compra(){
 }
 
 function iniciarVariables(){
+    var money = 0;
+    var Usercash;
+
     secciones.push(document.getElementById("S_inicio"));
     secciones.push(document.getElementById("S_registro"));
     secciones.push(document.getElementById("S_menu"));
@@ -93,6 +97,21 @@ function iniciarVariables(){
     secciones.push(document.getElementById("S_info"));
     secciones.push(document.getElementById("S_notificacion"));
     secciones.push(document.getElementById("S_recargaFactura"));
+
+    if(localStorage.getItem("monto") === null){
+        localStorage.setItem("monto", money);
+        Usercash = document.getElementsByClassName("DineroUsuario");
+        for(i = 0; i < Usercash.length; i++){
+            Usercash[i].innerHTML = money;
+        }
+    }
+    else{
+        money = localStorage.getItem("monto");
+        Usercash = document.getElementsByClassName("DineroUsuario");
+        for(i = 0; i < Usercash.length; i++){
+            Usercash[i].innerHTML = money;
+        }
+    }
 }
 
 function capturaDatosInicio(){
@@ -102,7 +121,13 @@ function capturaDatosInicio(){
     var localSCorreo = localStorage.getItem("correo");
     var localSPassword = localStorage.getItem("password");
 
+    var Usernames;
+
     if(Icorreo === localSCorreo && Ipassword === localSPassword){
+        Usernames = document.getElementsByClassName("NombreUsuario");
+        for(i = 0; i < Usernames.length; i++){
+            Usernames[i].innerHTML = localStorage.getItem("nombre");
+        }
         irA(2)
     }
     else{
@@ -126,4 +151,42 @@ function capturaDatosRegistro(){
     localStorage.setItem("celular", Rcelular);
 
     irA(0);
+}
+
+function recarga(){
+    var RecargaNoTarjeta = document.getElementById("Recarga_NoTarjeta").value;
+    var RecargaTitular = document.getElementById("Recarga_Titular").value;
+    var RecargaFVencimiento = document.getElementById("Recarga_FVencimiento").value;
+    var RecargaNoSeguridad = document.getElementById("Recarga_NoSeguridad").value;
+    var RecargaMonto = document.getElementById("Recarga_Monto").value;
+
+    document.getElementById("SIdRecarga").value = Math.floor(Math.random() * (300 - 1)) + 1;
+    document.getElementById("SNombreRecarga").value = RecargaTitular;
+    document.getElementById("SNumTarjeta").value = RecargaNoTarjeta;
+    document.getElementById("SMonto").value = monto;
+
+    monto += parseInt(RecargaMonto);
+
+    localStorage.setItem("numeroTarjera", RecargaNoTarjeta);
+    localStorage.setItem("titular", RecargaTitular);
+    localStorage.setItem("fechaVencimiento", RecargaFVencimiento);
+    localStorage.setItem("NumSeguridad",RecargaNoSeguridad);
+    
+    if(localStorage.getItem("monto") === null){
+        localStorage.setItem("monto", monto);
+    }
+    else{
+        tempMonto = localStorage.getItem("monto");
+        monto += tempMonto;
+        localStorage.setItem("monto", monto);
+    }
+
+    var Usercash = document.getElementsByClassName("DineroUsuario");
+    for(i = 0; i < Usercash.length; i++){
+        Usercash[i].innerHTML = monto;
+    }
+
+    document.getElementById("Recarga_Monto").value = "";
+
+    irA(10);
 }

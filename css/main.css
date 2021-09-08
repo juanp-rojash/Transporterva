@@ -96,6 +96,7 @@ input[type=password], select {
 /* Color de la seccion de factura de recarga de saldo */
 #S_recargaFactura {
   background: #33F9FF;
+  overflow-y: scroll;
 }
 
 /* Color de la seccion de factura de la reserva */
