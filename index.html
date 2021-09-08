@@ -440,9 +440,9 @@
             <br>
             <!-- Desplegable del horario del bus (segun las establecidas) -->
             <div class="row justify-content-md-center">
-                <select class="form-select" aria-label="Default select example" id="HorarioS">
-                    <option selected>Horario</option>
-                    <option value="6:00AM">6:00 AM</option>
+                <select id="HorarioS" class="form-select" aria-label="Default select example">
+                    <option disabled selected>Horario</option>
+                    <option value="6:00 AM">6:00 AM</option>
                 </select>
             </div>
         </div>
@@ -483,13 +483,13 @@
             <!-- Nombre de las sillas seleccionadas -->
             <p class="text-center font-weight-bold">Silla(s) Seleccionada(s)</p>
             <div class="row justify-content-md-center">
-                <input id="SSeleccionadas" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                <input id="SSeleccionadas" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
             </div>
             <br>
             <!-- Costo del viaje de acuerdo a la cantidad de sillas seleccionadas -->
             <p class="text-center font-weight-bold">Costo</p>
             <div class="row justify-content-md-center">
-                <input id="SCosto" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                <input id="SCosto" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
             </div>
             <br>
             <!-- Boton de compra que redirige a la factura, esto solo si hay al menos una silla seleccionada -->
@@ -522,24 +522,29 @@
         <div class="container">
             <br>
             <p class="text-center font-weight-bold">Factura de la compra</p>
+            <br>
+            <p class="text-center font-weight-bold">ID</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Id de la reserva -->
                     <input id="SId" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="ReservaID" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Nombre del Bus</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Numero del Bus -->
                     <input id="SBus" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="BusNo" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Silla(s) Reservada(s)</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Sillas seleccionadas -->
                     <input id="SSillas" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" value="Sillas" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Hora de Viaje</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Hora de salida del bus -->
@@ -560,6 +565,7 @@
                     <input id="SFechaV" type="date" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
                 </div>
             </div>
+            <p class="text-center font-weight-bold">Codigo de Viaje</p>
             <div class="row">
                 <div class="input-group mb-3">
                     <!-- Codigo del viaje -->

@@ -7,12 +7,22 @@ window.onload = inicio();
 
 function inicio(){
     iniciarVariables();
-    irA(0);
+    irA(4);
 }
 
 function TransicionCompra(){
-    compra();
-    irA(5);
+    if(document.getElementById("HorarioS").value === "Horario"){
+        window.alert("Seleccione un horario");
+    }
+    else{
+        if(document.getElementById("SSeleccionadas").value.length === 0){
+            window.alert("Seleccione una silla");
+        }
+        else{
+            compra();
+            irA(5);
+        }
+    }
 }
 
 function irA(id){
@@ -47,14 +57,15 @@ function seleccionSilla(id){
 function compra(){
     var tmp = new Date(Date.now());
     var DIA_EN_MILISEGUNDOS = 24 * 60 * 60 * 1000;
+    var manana = new Date(tmp.getTime() + DIA_EN_MILISEGUNDOS);
     var hora = document.getElementById("HorarioS").value;
-
+    
     document.getElementById("SId").value = Math.floor(Math.random() * (300 - 1)) + 1;
     document.getElementById("SBus").value = "Bus #1";
     document.getElementById("SSillas").value = sillas.toString();
-    //document.getElementById("ShoraV").value = hora;
+    document.getElementById("SHoraV").value = hora;
     document.getElementById("SFechaR").value = tmp.toISOString().split('T')[0];
-    document.getElementById("SFechaV").value = tmp.getTime() + DIA_EN_MILISEGUNDOS;
+    document.getElementById("SFechaV").value = manana.toISOString().split('T')[0];
     document.getElementById("SCodigo").value = Math.floor(Math.random() * (100 - 1)) + 1;
 
     for(var i = 0; i < sillas.length; i++){
