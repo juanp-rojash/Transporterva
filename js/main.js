@@ -2,7 +2,6 @@ let secciones = [];
 let sillas = [];
 let costo = 0;
 let sillasCompradas = [];
-let monto = 0;
 
 window.onload = inicio();
 
@@ -99,7 +98,7 @@ function iniciarVariables(){
     secciones.push(document.getElementById("S_recargaFactura"));
 
     if(localStorage.getItem("monto") === null){
-        localStorage.setItem("monto", money);
+        localStorage.setItem("monto", parseInt(money));
         Usercash = document.getElementsByClassName("DineroUsuario");
         for(i = 0; i < Usercash.length; i++){
             Usercash[i].innerHTML = money;
@@ -160,12 +159,12 @@ function recarga(){
     var RecargaNoSeguridad = document.getElementById("Recarga_NoSeguridad").value;
     var RecargaMonto = document.getElementById("Recarga_Monto").value;
 
+    var tempMonto = 0;
+
     document.getElementById("SIdRecarga").value = Math.floor(Math.random() * (300 - 1)) + 1;
     document.getElementById("SNombreRecarga").value = RecargaTitular;
     document.getElementById("SNumTarjeta").value = RecargaNoTarjeta;
-    document.getElementById("SMonto").value = monto;
-
-    monto += parseInt(RecargaMonto);
+    document.getElementById("SMonto").value = RecargaMonto;
 
     localStorage.setItem("numeroTarjera", RecargaNoTarjeta);
     localStorage.setItem("titular", RecargaTitular);
@@ -173,17 +172,17 @@ function recarga(){
     localStorage.setItem("NumSeguridad",RecargaNoSeguridad);
     
     if(localStorage.getItem("monto") === null){
-        localStorage.setItem("monto", monto);
+        localStorage.setItem("monto", parseInt(RecargaMonto));
     }
     else{
-        tempMonto = localStorage.getItem("monto");
-        monto += tempMonto;
-        localStorage.setItem("monto", monto);
+        tempMonto = parseInt(localStorage.getItem("monto"));
+        tempMonto = tempMonto + parseInt(RecargaMonto);
+        localStorage.setItem("monto", parseInt(tempMonto));
     }
 
     var Usercash = document.getElementsByClassName("DineroUsuario");
     for(i = 0; i < Usercash.length; i++){
-        Usercash[i].innerHTML = monto;
+        Usercash[i].innerHTML = tempMonto;
     }
 
     document.getElementById("Recarga_Monto").value = "";
