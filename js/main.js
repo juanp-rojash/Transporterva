@@ -8,7 +8,7 @@ window.onload = inicio();
 
 function inicio(){
     iniciarVariables();
-    irA(2);
+    irA(0);
 }
 
 function TransicionCompra(){
