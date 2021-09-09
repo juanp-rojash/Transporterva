@@ -11,6 +11,11 @@ function inicio(){
 }
 
 function TransicionCompra(){
+
+    var money = parseInt(localStorage.getItem("monto"));
+    var valor = parseInt(document.getElementById("SCosto").value);
+    var Usercash;
+
     if(document.getElementById("HorarioS").value === "Horario"){
         window.alert("Seleccione un horario");
     }
@@ -19,8 +24,19 @@ function TransicionCompra(){
             window.alert("Seleccione una silla");
         }
         else{
-            compra();
-            irA(5);
+            if(money < valor){
+                window.alert("No tiene el dinero suficiente para pagar la reserva");
+            }
+            else{
+                money = money - valor;
+                localStorage.setItem("monto", parseInt(money));
+                Usercash = document.getElementsByClassName("DineroUsuario");
+                for(i = 0; i < Usercash.length; i++){
+                    Usercash[i].innerHTML = money;
+                }
+                compra();
+                irA(5);
+            }
         }
     }
 }
@@ -29,7 +45,7 @@ function irA(id){
     for(var i = 0; i < secciones.length; i++){
         secciones[i].className = "ocultar";
     }
-    secciones[id].className = "";
+    secciones[id].className = "animate__animated animate__backInLeft";
 }
 
 function seleccionSilla(id){
@@ -94,7 +110,6 @@ function iniciarVariables(){
     secciones.push(document.getElementById("S_redbus"));
     secciones.push(document.getElementById("S_recarga"));
     secciones.push(document.getElementById("S_info"));
-    secciones.push(document.getElementById("S_notificacion"));
     secciones.push(document.getElementById("S_recargaFactura"));
 
     if(localStorage.getItem("monto") === null){
@@ -187,5 +202,5 @@ function recarga(){
 
     document.getElementById("Recarga_Monto").value = "";
 
-    irA(10);
+    irA(9);
 }

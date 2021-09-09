@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initical-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>Secciones Trasnporterva</title>
 </head>
 <body>
@@ -108,10 +109,6 @@
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
             </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
         </div>
         <br>
         <!-- Botones correspondientes a cada funcionalidad disponible -->
@@ -157,10 +154,6 @@
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
             </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
         </div>
         <br>
         <!-- Botones que dirigen a la informacion del bus correspondiente -->
@@ -197,10 +190,6 @@
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
             </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
         </div>
         <br>
         <div class="container">
@@ -224,16 +213,16 @@
             </thead>
             <tbody>
                 <tr >
-                    <td>Parada #1</td>
-                    <td>Dirección #1</td>
+                    <td>Inicio</td>
+                    <td>Hotel Bolivariana Plaza</td>
                 </tr>
                 <tr>
-                    <td>Parada #2</td>
-                    <td>Dirección #2</td>
+                    <td>#1</td>
+                    <td>Cl. 14 #50-25, Medellín, Antioquia</td>
                 </tr>
                 <tr>
-                    <td>Parada #3</td>
-                    <td>Dirección #3</td>
+                    <td>Fin</td>
+                    <td>Viva envigado</td>
                 </tr>
             </tbody>
         </table>
@@ -252,10 +241,6 @@
             </div>
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
-            </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <!-- Campos input que llena el usuario para recrgar su saldo -->
@@ -313,10 +298,6 @@
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
             </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
         </div>
         <br>
         <!-- Contenedor con toda la informacion correspondiente de la aplicacion -->
@@ -327,82 +308,40 @@
             <div class="row justify-content-md-center">
                 <span class="border border-primary">
                     <div class="row justify-content-md-center">
-                        <p class="text-center">¿What is Lorem Ipsum?</p>
+                        <p class="text-center font-weight-bold">¿Como reservo los asientos?</p>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <p class="text-center">
+                                Para realizar la reserva de tus asientos de un bus te sugerimos revisar la sección en el menú de “Red de Buses” donde podrás visualizar el bus y la tabla de paradas y direcciones que recorrerá el próximo día. 
+                                Ya definido el bus que usaras, podrás seleccionarlo en la misma sección de “Red de Buses” o volver al menú de inicio y dirigirse a la sección “Reserva”, si te encuentras en la sección “Reservas” elegirás el bus que visualizaste previamente y la aplicación te llevara a la próxima ventana. 
+                                En este punto nos encontramos en el mismo camino, si tomaste el de seleccionar el bus en la sección “Red de Buses” o en la sección de “Reservas”, ahora, confirmaremos toda la información que se había analizado previamente y procederán a seleccionar un horario, el cual será el horario de salida del bus. 
+                                El próximo paso será seleccionar los asientos que deseas reservar (Los asientos presentan tres estados, verde, si esta disponible, azul, si has seleccionado el asiento, rojo, el asiento se encuentra ocupado/reservado). Luego procederás a pagar la reserva con el dinero que hayas recargado en la aplicación, 
+                                en caso de no tener dinero, dirigirse a la pregunta ¿Cómo recargo dinero? Al pagar la reserva se le enseñará su factura respectiva, la cual le deberá tomar un pantallazo para presentarla antes de subir al bus. Feliz viaje.
+                            </p>
                         </div>
                     </div>
                 </span>
             </div>
             <br>
             <div class="row justify-content-md-center">
-                <p class="text-center font-weight-bold">Guía</p>
-            </div>
-            <div class="row justify-content-md-center">
-                <p class="text-center">¿Cómo Reservar?</p>
-            </div>
-            <!-- Se piensa insertar el video explicativo de como reservar -->
-            <div class="row justify-content-md-center">
-                <div class="mx-auto">
-                    <img src="./img/video.png">
-                </div>
+                <span class="border border-primary">
+                    <div class="row justify-content-md-center">
+                        <p class="text-center font-weight-bold">¿Como recargo dinero?</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center">
+                                Para recargar dinero en la aplicación, en el menú, debes dirigirte a la sección “Recarga” allí, ingresaras toda la información correspondiente a una tarjeta de crédito propia del usuario y seguido de esto, el monto que deseas recargarle a la aplicación, 
+                                al presionar el botón recargar, se mostrará tu factura correspondiente a la transferencia y tu cuenta del aplicativo se actualizará. En caso de que desees realizar más recargas, la información de tu tarjeta como ya fue registrada, aparecerá como predeterminado en las casillas, 
+                                y el procedimiento se resumiría a solo ingresar el monto que desees recargar y ya. Feliz viaje.
+                            </p>
+                        </div>
+                    </div>
+                </span>
             </div>
         </div>
     <!-- Finalizacion de la seccion de informacion -->
-    </section>
-    <!-- Seccion de notificaion de viajes reservados de la aplicacion -->
-    <section id="S_notificacion" class="ocultar">
-        <!-- Barra principal donde se visualiza el logo, usuario, saldo y notificaciones -->
-        <div id="BarraH">
-            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
-            <div class="C_img">
-                <img src="./img/autobus.png" onclick="irA(2)">
-            </div>
-            <div class="C_nombre">
-                <p class="NombreUsuario"> Usuario </p>
-            </div>
-            <div class="C_saldo">
-                <p class="DineroUsuario"> 00000 </p>
-            </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
-        </div>
-        <!-- Contenedor con cada reserva de viaje hecha por el usuario -->
-        <div class="container">
-            <br>
-            <!-- Cada reserva redirige a la factura de compra con toda la informacion necesaria -->
-            <p class="text-center font-weight-bold">Reservas</p>
-            <br>
-            <div class="row justify-content-md-center">
-                <div class="col-8" onclick="irA(5)">
-                    <p class="text-center">Reserva ID</p>
-                </div>
-                <div class="col-4">
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-8" onclick="irA(5)">
-                    <p class="text-center">Reserva ID</p>
-                </div>
-                <div class="col-4">
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-8" onclick="irA(5)">
-                    <p class="text-center">Reserva ID</p>
-                </div>
-                <div class="col-4">
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
-    <!-- Finalizacion de la seccion de notificaciones -->    
     </section>
     <!-- Seccion de reserva (pagina 2) de la aplicacion -->
     <section id="S_reservaP2" class="ocultar">
@@ -417,10 +356,6 @@
             </div>
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
-            </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
@@ -437,7 +372,15 @@
             <br>
             <!-- Ruta del bus seleccionado -->
             <div class="Espacio_MapaSilla">
-                <img src="./img/mapa.png">
+                <img id="maps" src="./img/mapa.png">
+            </div>
+            <br>
+            <div class="Espacio_MapaSilla">
+                <img id="maps" src="./img/mapaP1.png">
+            </div>
+            <br>
+            <div class="Espacio_MapaSilla">
+                <img id="maps" src="./img/mapaPf.png">
             </div>
             <br>
             <!-- Desplegable del horario del bus (segun las establecidas) -->
@@ -514,10 +457,6 @@
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
             </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
-            </div>
         </div>
         <br>
         <!-- Contenedor con toda la informacion de la factura -->
@@ -575,6 +514,19 @@
                 </div>
             </div>
             <br>
+            <div class="row justify-content-md-center">
+                <span class="border border-primary">
+                    <div class="row justify-content-md-center">
+                        <p class="text-center">Advertencia</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center">Para hacer uso de la reserva debe tomarle pantallazo a esta factura para presentarla y acceder al bus que reservo</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <br>|
             <!-- Boton que redirige al inicio de la aplicacion -->
             <div class="row">
                 <div class="input-group mb-3">
@@ -597,10 +549,6 @@
             </div>
             <div class="C_saldo">
                 <p class="DineroUsuario"> 00000 </p>
-            </div>
-            <!-- La imagen de notificacion de esta barra, redirige a las notificaiones del usuario -->
-            <div class="C_notificacion">
-                <img src="./img/notificacion.png" onclick="irA(9)">
             </div>
         </div>
         <br>
