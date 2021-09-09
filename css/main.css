@@ -28,17 +28,17 @@ input[type=password], select {
 
 /* Color de la seccion de registro */
 #S_registro {
-  background: #730000;
+  background: #CD6155;
 }
 
 /* Color de la seccion del menu principal */
 #S_menu {
-  background: #6D4C41;
+  background: #AF79AF;
 }
 
 /* Color de la seccion de la primera pagina de reserva */
 #S_reservaP1 {
-  background: #5D6D7E;
+  background: #AF79AF;
 }
 
 /* Margen que contiene la imagen de bus */
@@ -50,7 +50,7 @@ input[type=password], select {
 
 /* Color de la seccion de la segunda pagina de la reserva ademas de la barra de scroll */
 #S_reservaP2 {
-  background: #CACFD2;
+  background: #AF79AF;
   overflow-y: scroll;
 }
 
@@ -59,7 +59,8 @@ input[type=password], select {
   height: 32%;
   width: 90%;
   margin-left: 4.5%;
-  border: 2px solid white;
+  border: 2px solid black;
+  background: white;
 }
 
 /* Recuadro que centra el mapa (imagen) */
@@ -92,24 +93,24 @@ input[type=password], select {
 
 /* Color de la seccion de recarga de saldo */
 #S_recarga {
-  background: #AF7AC5;
+  background: #AF79AF;
 }
 
 /* Color de la seccion de informacion */
 #S_info {
-  background: #52BE80;
+  background: #F8C471;
   overflow-y: scroll;
 }
 
 /* Color de la seccion de factura de recarga de saldo */
 #S_recargaFactura {
-  background: #33F9FF;
+  background: #F8C471;
   overflow-y: scroll;
 }
 
 /* Color de la seccion de factura de la reserva */
 #S_reservaFactura {
-  background: #48C9B0;
+  background: #F8C471;
   overflow-y: scroll;
 }
 
@@ -160,3 +161,5 @@ body {
 .ocultar {
   display: none;
 }
+
+/*# sourceMappingURL=main.css.map */
