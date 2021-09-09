@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initical-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="vendor/css/animate.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <title>Secciones Trasnporterva</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
                 <!-- Campos input de datos del cliente -->
                 <div class="row">
                     <div class="input-group mb-3">
-                        <input id="R_Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <input id="R_Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2" required maxlength="17">
                     </div>
                 </div>
                 <p class="text-center text-white">Fecha de Nacimiento</p>
@@ -137,6 +137,13 @@
                     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(8)">Información</button>
                 </div>
             </div>
+            <br><br>
+            <!-- Boton de creditos de la aplicacion -->
+            <div class="row">
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(10)">Creditos</button>
+                </div>
+            </div>
         </div>
     <!-- Finalizacion de seccion de inicio -->
     </section>
@@ -166,13 +173,6 @@
                 <img src="./img/Bus.png" onclick="irA(4)">
             </div>
             <br>
-            <div class="row">
-                <button type="button" class="btn btn-primary btn-block" onclick="irA(4)">Bus #2</button>
-            </div>
-            <br>
-            <div class="Espacio_Bus">
-                <img src="./img/Bus.png" onclick="irA(4)">
-            </div>
         </div>
     <!-- Finalizacion de seccion de reserva de buses (pagina 1) -->    
     </section>
@@ -526,7 +526,7 @@
                     </div>
                 </span>
             </div>
-            <br>|
+            <br>
             <!-- Boton que redirige al inicio de la aplicacion -->
             <div class="row">
                 <div class="input-group mb-3">
@@ -593,8 +593,43 @@
             </div>
         </div>
     </section>
+    <!-- Seccion de Creditos -->
+    <section id="S_creditos" class="ocultar">
+        <div id="BarraH">
+            <!-- El logo de esta barra, redirige al menu de la aplicacion -->
+            <div class="C_img">
+                <img src="./img/autobus.png" onclick="irA(2)">
+            </div>
+            <div class="C_nombre">
+                <p class="NombreUsuario"> Usuario </p>
+            </div>
+            <div class="C_saldo">
+                <p class="DineroUsuario"> 00000 </p>
+            </div>
+        </div>
+        <br>
+        <div class="container"> 
+            <div class="row justify-content-md-center">
+                <p class="text-center font-weight-bold">Creditos</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        Agradecimientos a los creadores Juan Pablo Rojas y Juan Pablo Villegas por la ideación y ejecución del proyecto.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <!-- Boton que redirige al inicio de la aplicacion -->
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="irA(2)">Inicio</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-<script src="./js/main.js"></script>
+<script src="./js/main.min.js"></script>
 </html>
-<script src="js/bootstrap.min.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
 </html>
