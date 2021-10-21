@@ -27,6 +27,12 @@ En el repositorio, a la hora de nombrar los commits, deben cumplir con cierto no
 Ej: [Tk-01] Configuración de GULP.
 Finalmente para el código ira siempre correctamente tabulado y no deben presentarse espacios adicionales o innecesarios
 
+## **¿Como funciona la Aplicación?**
+
+Al ejecutar el index.html, se presentará una pantalla de inicio de sesión, como aun no te encuentras registrado, debes dar clic en las letras de registrarme y completar el formulario con tu información personal, ya con el correo y contraseña inscritas, iniciaras sesión, para continuar con el funcionamiento de la aplicación puedes dar clic en la sección de “Información” y ver como se puede evidenciar su uso.
+Cabe resaltar que la aplicación esta diseñada para tener una única cuenta de usuario.
+Toda la información procesada se almacena en el LocalStorage, lo que conlleva a que si inscribes información nueva en los formularios, sobrescribirá la información que ya habías administrado.
+
 ## Autores
 
 Juan Pablo Rojas Higuita
